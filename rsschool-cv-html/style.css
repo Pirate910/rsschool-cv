@@ -2,40 +2,34 @@
   padding: 0;
   margin: 0;
   border: 0;
-}
-
-body {
-  padding: 30px;
-}
-
-.text {
-  font-size: 24px;
-  line-height: 33px;
-  margin: 0px 0px 30px 0px;
-}
-
-.text::first-line{
-  color: green;
-}
-.text::first-letter{
-  font-size: 50px;
-  color: red;
-}
-
-.list {}
-
-.list li {
-  font-size: 24px;
-  margin: 0 0 30px 0px;
   list-style-type: none;
 }
 
-.list li::before {
+body {
+  padding: 10vh;
+  text-align: center;
+}
+
+.card {
+  display:inline-block;
+}
+
+.card-title li {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.card-title li::before{
   content: "";
+  display: inline-block;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
   background-color: red;
-  display: inline-block;
-  margin:0 10px 0 0 ;
+  border-radius: 50%;
+  margin: 0 10px 0 0 ;
+}
+
+.card-title li:hover::before {
+  background-color: #6e1313;
 }
