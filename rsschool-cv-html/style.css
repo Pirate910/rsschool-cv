@@ -17,6 +17,10 @@ body {
 .text::first-line{
   color: green;
 }
+.text::first-letter{
+  font-size: 50px;
+  color: red;
+}
 
 .list {}
 
@@ -24,4 +28,14 @@ body {
   font-size: 24px;
   margin: 0 0 30px 0px;
   list-style-type: none;
+}
+
+.list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin:0 10px 0 0 ;
 }
