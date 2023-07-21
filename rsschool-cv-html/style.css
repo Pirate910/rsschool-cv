@@ -38,25 +38,45 @@ body {
 
 
 .card-button {
-  display: inline-block;
-  background-color: rgb(8, 155, 8);
-  border-radius: 50px;
-  margin: 20px 50px 20px 50px;
-  padding: 5px;
-  height: 50px;
-  width: 250px;
-  transition: .5s;
+  display: flex;
+  justify-content: center;
+  outline: 2px solid black;
+  padding: 10px;
 }
 
-.card-button:hover {
-  cursor: pointer;
-  background-color: rgb(25, 190, 25);
-  transform: scale(1.2);
+.card-button a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 
 .button1 {
+  margin: 15px 20px 15px 20px;
+  background-color: rgb(8, 155, 8);
+  border-radius: 50px;
+  height: 50px;
+  width: 250px;
   color: white;
-  padding: 10px;
+  transition: .5s;
+}
+.button1:hover {
+  transform: scale(1.2);
+  background-color: green;
+}
+
+.button2 {
+  background-color: rgb(8, 155, 8);
+  margin: 15px 20px 15px 20px;
+  border-radius: 50px;
+  height: 50px;
+  width: 250px;
+  color: white;
+  transition: .5s;
+}
+.button2:hover {
+  transform: scale(1.2);
+  background-color: green;
 }
 
 .card-title2 {
@@ -64,12 +84,10 @@ body {
   font-size: 18px;
   margin-bottom: 20px;
 }
-
 .card-title2::first-letter {
   font-size: 24px;
   color: red;
 }
-
 .card-title3 {
   font-size: 18px;
   text-align: left;
